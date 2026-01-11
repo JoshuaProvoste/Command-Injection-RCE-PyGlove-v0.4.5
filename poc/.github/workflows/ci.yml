@@ -1,0 +1,22 @@
+name: CI
+on:
+  workflow_dispatch:
+    inputs:
+      oob_url:
+        description: "Interactsh URL (HTTP-only). Example: <id>.oast.online"
+        required: true
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python scripts/producer.py
+      - run: python scripts/consumer.py
+      - run: python scripts/payload_generator.py
+        env:
+          OOB_URL: ${{ inputs.oob_url }}
+      - run: python scripts/poc_json_conversion.py
