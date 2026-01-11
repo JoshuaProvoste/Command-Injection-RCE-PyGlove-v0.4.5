@@ -60,7 +60,7 @@ Example that represents {'hola','mundo'} **as an opaque object**:
 
 This script is a realistic PoC because it uses only the package's public API (`pyglove`) and faithfully reproduces the execution flow.
 
-## A as realistic PoC using Github Actions
+## A realistic PoC using Github Actions
 
 This PoC reproduces, within **GitHub Actions**, the same execution flow described in the original report using only **PyGlove’s public API**. The workflow is executed manually (`workflow_dispatch`) and provisions a controlled environment (Ubuntu + Python 3.11), installs dependencies, and then runs a sequence of scripts that simulate a realistic production pipeline consuming JSON inputs from different sources.
 
