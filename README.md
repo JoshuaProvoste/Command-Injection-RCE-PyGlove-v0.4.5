@@ -2,7 +2,7 @@
 
 - Author: Joshua Provoste
 - Website: https://joshuaprovoste.com
-- Compan: https://wl-inc.cl
+- Company: https://wl-inc.cl
 
 ## Resume
 
