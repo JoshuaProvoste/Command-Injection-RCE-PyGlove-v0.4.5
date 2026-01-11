@@ -102,4 +102,4 @@ For example, this has been observed in well-known cases such as Ultralytics / Py
 
 ### About the disclosure
 
-This report was authorized for full release by the Google Bug Hunter Team.
+This report was authorized for full disclosure by the Google Bug Hunter Team.
